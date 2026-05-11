@@ -1,1 +1,161 @@
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #faf8fb;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.intro h1 {
+  font-size: 30px;
+  margin: 0 0 16px 0;
+}
+
+.intro p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.research-summary {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 14px;
+}
+
+nav {
+  margin-top: 18px;
+}
+
+nav a {
+  margin-right: 28px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.profile-img {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 28px 0 22px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+ul {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.experience li {
+  margin-bottom: 18px;
+}
+
+.publication {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 26px;
+}
+
+.tag {
+  display: inline-block;
+  min-width: 105px;
+  text-align: center;
+  background-color: #7a49b5;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 18px;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.pub-info {
+  flex: 1;
+}
+
+.pub-title {
+  color: #0066cc;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pub-title:hover {
+  text-decoration: underline;
+}
+
+.pub-info p {
+  margin: 2px 0;
+  font-size: 15px;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 760px) {
+  .container {
+    width: auto;
+    margin: 24px 18px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  .publication {
+    flex-direction: column;
+  }
+
+  .tag {
+    margin-bottom: 8px;
+  }
+}
